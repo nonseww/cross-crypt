@@ -11,112 +11,102 @@
   </defs>
 
   <!-- Background -->
-  <rect width="720" height="420" fill="#18181a" rx="12"/>
+  <rect width="720" height="420" fill="#ffffff" rx="12"/>
 
   <!-- Title -->
   <text x="360" y="34" text-anchor="middle"
         font-family="'Segoe UI', sans-serif" font-size="15" font-weight="600"
-        fill="#e8e6da">CrossCrypt — High-Level Architecture</text>
+        fill="#1a1a1a">CrossCrypt — High-Level Architecture</text>
 
-  <!-- ══════════════════════════════════════════════
-       BOXES
-  ═══════════════════════════════════════════════ -->
-
-  <!-- Discord Client (Player 1) -->
+  <!-- Discord Client -->
   <rect x="30" y="100" width="130" height="70" rx="8"
-        fill="#083c2e" stroke="#5dcaa5" stroke-width="1"/>
+        fill="#d6f5eb" stroke="#1a8a6a" stroke-width="1.5"/>
   <text x="95" y="122" text-anchor="middle"
         font-family="'Segoe UI', sans-serif" font-size="12" font-weight="600"
-        fill="#9fe1cb">Discord Client</text>
+        fill="#0f5c46">Discord Client</text>
   <text x="95" y="140" text-anchor="middle"
-        font-family="'Segoe UI', sans-serif" font-size="10" fill="#5dcaa5">команды · кнопки</text>
+        font-family="'Segoe UI', sans-serif" font-size="10" fill="#1a8a6a">команды · кнопки</text>
   <text x="95" y="153" text-anchor="middle"
-        font-family="'Segoe UI', sans-serif" font-size="10" fill="#5dcaa5">embeds · роль-изоляция</text>
+        font-family="'Segoe UI', sans-serif" font-size="10" fill="#1a8a6a">embeds · роль-изоляция</text>
 
   <!-- Backend -->
   <rect x="280" y="80" width="160" height="100" rx="8"
-        fill="#0c3a6e" stroke="#85b7eb" stroke-width="1"/>
+        fill="#d6e8fb" stroke="#1a5fb0" stroke-width="1.5"/>
   <text x="360" y="105" text-anchor="middle"
         font-family="'Segoe UI', sans-serif" font-size="13" font-weight="600"
-        fill="#b5d4f4">Backend</text>
-  <line x1="295" y1="115" x2="425" y2="115" stroke="#85b7eb" stroke-width="0.5" stroke-dasharray="3 3"/>
+        fill="#0d3d7a">Backend</text>
+  <line x1="295" y1="115" x2="425" y2="115" stroke="#1a5fb0" stroke-width="0.8" stroke-dasharray="3 3"/>
   <text x="360" y="132" text-anchor="middle"
-        font-family="'Segoe UI', sans-serif" font-size="10" fill="#85b7eb">REST API</text>
+        font-family="'Segoe UI', sans-serif" font-size="10" fill="#1a5fb0">REST API</text>
   <text x="360" y="148" text-anchor="middle"
-        font-family="'Segoe UI', sans-serif" font-size="10" fill="#85b7eb">CRUD · сессии · роли</text>
+        font-family="'Segoe UI', sans-serif" font-size="10" fill="#1a5fb0">CRUD · сессии · роли</text>
   <text x="360" y="165" text-anchor="middle"
-        font-family="'Segoe UI', sans-serif" font-size="10" fill="#85b7eb">WebSocket (real-time)</text>
+        font-family="'Segoe UI', sans-serif" font-size="10" fill="#1a5fb0">WebSocket (real-time)</text>
 
   <!-- PostgreSQL -->
   <rect x="280" y="280" width="160" height="60" rx="8"
-        fill="#3a2060" stroke="#b89ee8" stroke-width="1"/>
+        fill="#ede0fb" stroke="#6a2fb0" stroke-width="1.5"/>
   <text x="360" y="306" text-anchor="middle"
         font-family="'Segoe UI', sans-serif" font-size="13" font-weight="600"
-        fill="#d4c6f5">PostgreSQL</text>
+        fill="#3d1270">PostgreSQL</text>
   <text x="360" y="326" text-anchor="middle"
-        font-family="'Segoe UI', sans-serif" font-size="10" fill="#b89ee8">комнаты · кроссворды · штрафы</text>
+        font-family="'Segoe UI', sans-serif" font-size="10" fill="#6a2fb0">комнаты · кроссворды · штрафы</text>
 
   <!-- Discord API -->
   <rect x="560" y="100" width="130" height="60" rx="8"
-        fill="#5c1a0a" stroke="#f09a7a" stroke-width="1"/>
+        fill="#fde0d5" stroke="#c0411a" stroke-width="1.5"/>
   <text x="625" y="126" text-anchor="middle"
         font-family="'Segoe UI', sans-serif" font-size="13" font-weight="600"
-        fill="#f5c4b3">Discord API</text>
+        fill="#7a2010">Discord API</text>
   <text x="625" y="148" text-anchor="middle"
-        font-family="'Segoe UI', sans-serif" font-size="10" fill="#f09a7a">OAuth2 · Gateway</text>
-
-  <!-- ══════════════════════════════════════════════
-       ARROWS
-  ═══════════════════════════════════════════════ -->
+        font-family="'Segoe UI', sans-serif" font-size="10" fill="#c0411a">OAuth2 · Gateway</text>
 
   <!-- Discord Client → Backend (REST API) -->
   <line x1="162" y1="125" x2="278" y2="118"
-        stroke="#9ca89e" stroke-width="1.4" marker-end="url(#arrow)"/>
+        stroke="#444444" stroke-width="1.4" marker-end="url(#arrow)"/>
   <text x="220" y="111" text-anchor="middle"
-        font-family="'Segoe UI', sans-serif" font-size="10" fill="#c2c0b6">REST API</text>
+        font-family="'Segoe UI', sans-serif" font-size="10" fill="#333333">REST API</text>
 
   <!-- Backend → Discord Client (REST response) -->
   <line x1="278" y1="135" x2="162" y2="143"
-        stroke="#9ca89e" stroke-width="1.4" stroke-dasharray="5 3"
+        stroke="#444444" stroke-width="1.4" stroke-dasharray="5 3"
         marker-end="url(#arrow)"/>
   <text x="220" y="150" text-anchor="middle"
-        font-family="'Segoe UI', sans-serif" font-size="10" fill="#c2c0b6">ответ / push</text>
+        font-family="'Segoe UI', sans-serif" font-size="10" fill="#333333">ответ / push</text>
 
   <!-- Backend ↔ PostgreSQL -->
   <line x1="360" y1="182" x2="360" y2="278"
-        stroke="#b89ee8" stroke-width="1.4" marker-end="url(#arrow)"/>
+        stroke="#6a2fb0" stroke-width="1.4" marker-end="url(#arrow)"/>
   <text x="375" y="236" text-anchor="start"
-        font-family="'Segoe UI', sans-serif" font-size="10" fill="#b89ee8">SQL</text>
+        font-family="'Segoe UI', sans-serif" font-size="10" fill="#6a2fb0">SQL</text>
   <line x1="345" y1="278" x2="345" y2="182"
-        stroke="#b89ee8" stroke-width="1.4" stroke-dasharray="5 3"
+        stroke="#6a2fb0" stroke-width="1.4" stroke-dasharray="5 3"
         marker-end="url(#arrow)"/>
 
   <!-- Backend → Discord API -->
   <line x1="442" y1="118" x2="558" y2="118"
-        stroke="#f09a7a" stroke-width="1.4" marker-end="url(#arrow)"/>
+        stroke="#c0411a" stroke-width="1.4" marker-end="url(#arrow)"/>
   <text x="500" y="111" text-anchor="middle"
-        font-family="'Segoe UI', sans-serif" font-size="10" fill="#f5c4b3">Bot / OAuth2</text>
+        font-family="'Segoe UI', sans-serif" font-size="10" fill="#7a2010">Bot / OAuth2</text>
 
   <!-- Discord API → Backend -->
   <line x1="558" y1="135" x2="442" y2="135"
-        stroke="#f09a7a" stroke-width="1.4" stroke-dasharray="5 3"
+        stroke="#c0411a" stroke-width="1.4" stroke-dasharray="5 3"
         marker-end="url(#arrow)"/>
   <text x="500" y="150" text-anchor="middle"
-        font-family="'Segoe UI', sans-serif" font-size="10" fill="#f5c4b3">events / tokens</text>
+        font-family="'Segoe UI', sans-serif" font-size="10" fill="#7a2010">events / tokens</text>
 
   <!-- Discord Client ↔ Discord API (user in Discord) -->
   <path d="M95 170 Q95 230 625 168" fill="none"
-        stroke="#5dcaa5" stroke-width="1" stroke-dasharray="4 3" opacity="0.45"/>
+        stroke="#1a8a6a" stroke-width="1" stroke-dasharray="4 3" opacity="0.55"/>
   <text x="360" y="222" text-anchor="middle"
-        font-family="'Segoe UI', sans-serif" font-size="9" fill="#5dcaa5" opacity="0.7">
+        font-family="'Segoe UI', sans-serif" font-size="9" fill="#1a8a6a" opacity="0.85">
     пользователь находится в Discord
   </text>
 
-  <!-- ══════════════════════════════════════════════
-       LEGEND
-  ═══════════════════════════════════════════════ -->
-  <line x1="40" y1="386" x2="70" y2="386" stroke="#9ca89e" stroke-width="1.4"/>
-  <text x="76" y="390" font-family="'Segoe UI', sans-serif" font-size="10" fill="#9ca89e">запрос</text>
-  <line x1="130" y1="386" x2="160" y2="386" stroke="#9ca89e" stroke-width="1.4" stroke-dasharray="5 3"/>
-  <text x="166" y="390" font-family="'Segoe UI', sans-serif" font-size="10" fill="#9ca89e">ответ</text>
+  <!-- LEGEND -->
+  <line x1="40" y1="386" x2="70" y2="386" stroke="#444444" stroke-width="1.4"/>
+  <text x="76" y="390" font-family="'Segoe UI', sans-serif" font-size="10" fill="#333333">запрос</text>
+  <line x1="130" y1="386" x2="160" y2="386" stroke="#444444" stroke-width="1.4" stroke-dasharray="5 3"/>
+  <text x="166" y="390" font-family="'Segoe UI', sans-serif" font-size="10" fill="#333333">ответ</text>
 </svg>
